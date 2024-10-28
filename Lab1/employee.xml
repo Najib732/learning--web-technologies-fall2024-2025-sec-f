@@ -2,8 +2,7 @@
  
     <employee srl="1">
         <id>1 </id>
-        <name> check
-            
+        <name>
             <firstname>john </firstname>
             <lastname> Doe </lastname>
         </name>
