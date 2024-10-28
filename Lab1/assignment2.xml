@@ -1,0 +1,50 @@
+<admission>
+
+    <record srl="1">
+
+        <slno>23</slno>
+            <name>
+                <firstname>John </firstname>
+                <lastname> Carter <lastname>
+            </name>
+            <admissiondate>
+                <date>25</date>
+                <month> 12 </month>
+                <year>2015</year>
+            </admissiondate>
+    </record>
+
+    <record srl="2">
+
+        <slno>29</slno>
+         <name>
+                <firstname>Bob </firstname>
+                <lastname> Marshal<lastname>
+            </name>
+         <admissiondate>
+                <date>13</date>
+                <month> 01</month>
+                <year>1999</year>
+            </admissiondate>
+    </record>
+
+    <record srl="3">
+
+        <slno>35</slno>
+         <name>
+                <firstname>Clark</firstname>
+                <lastname> Kent <lastname>
+            </name>
+         <admissiondate>
+                <date>17</date>
+                <month> 06 </month>
+                <year>2005</year>
+            </admissiondate>
+    </record>
+
+
+
+
+
+
+</admission>
