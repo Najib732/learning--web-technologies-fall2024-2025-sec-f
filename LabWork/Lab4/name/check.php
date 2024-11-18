@@ -2,9 +2,9 @@
 
 session_start();
 
-if (isset($_GET['submit'])) {
+if (isset($_POST['submit'])) {
 
-    $username = $_REQUEST['name'];
+    $username = $_POST['name'];
     $count = strlen($username);
     $letter = substr($username, 0,1);
     $firstLetter;
@@ -42,11 +42,9 @@ if (isset($_GET['submit'])) {
     }
 }
 
-echo $number;
-
-    if ($username==null||$count>=2||in_array($letter, $array)==true||$number==$count) {
-        echo "Fill the textbox";
-    } 
+if ($username == null || $count < 2 || in_array($letter, $array) == true || $number != $count) {
+    echo "Fill the textbox";
+} 
     else {
 
         echo  "{$count}";
