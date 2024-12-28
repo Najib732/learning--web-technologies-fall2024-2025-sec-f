@@ -11,10 +11,12 @@
         if($username == null || empty($password) || empty($email) ){
             echo "Null data found!";
         }else {
-            $status = addUser($username, $password, $confirmpassword,$email);
+        
+            $status = addUser($username, $password,$email);
             if($status){
                 header('location: ../view/login.html');
             }else{
+               
                 header('location: ../view/signup.html');
             }
         }

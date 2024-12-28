@@ -1,30 +1,34 @@
 <?php
-    session_start();
-    if(isset($_COOKIE['flag'])){
+session_start();
+if (isset($_COOKIE['flag'])) {
 
-        if(isset($_REQUEST['id'])){
-            echo $_REQUEST['id'];
-        }
-        $user = ['id'=>4, 'username'=>'pqr', 'email'=>'alamin@aiub.edu', 'password'=>123];
+    if (isset($_REQUEST['id'])) {
+        echo $_REQUEST['id'];
+        $id = $_REQUEST['id'];
+    }
+
 ?>
 
-<html>
-<head>
-    <title>Signup</title>
-</head>
-<body>
+    <html>
+
+    <head>
+        <title>Signup</title>
+    </head>
+
+    <body>
         <h2> Edit User </h2>
-        <form method="post" action="update.php" enctype="">
-            Username: <input type="text" name="username" value="<?=$user['username']?>" /> <br>
-            Password: <input type="password" name="password" value="<?=$user['password']?>" /> <br>
-            Email: <input type="email" name="email" value="<?=$user['email']?>" /> <br>
-                    <input type="submit" name="submit" value="Update" />
+        <form method="post" action="../controller/editCheck.php?id=<?= $id; ?>" enctype="">
+            name:<input type="text" name="name" value="" /> <br><br>
+            Password: <input type="password" name="password" value="" /> <br><br>
+            Email: <input type="email" name="email" value="" /> <br>
+            <input type="submit" name="submit" value="Update" />
         </form>
-</body>
-</html>
+    </body>
+
+    </html>
 
 <?php
-    }else{
-        header('location: login.html'); 
-    }
+} else {
+    header('location: login.html');
+}
 ?>
